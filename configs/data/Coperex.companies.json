@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "67c7b2fe230ecdc801710d92"
+  },
+  "name": "Kemik",
+  "impactLevel": "Medio",
+  "years": 5,
+  "category": "Electrodomesticos",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T02:12:14.615Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T02:51:31.590Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7b3f6230ecdc801710da1"
+  },
+  "name": "Intelaf",
+  "impactLevel": "Alto",
+  "years": 5,
+  "category": "Tecnología",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T02:16:22.017Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T02:16:22.017Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7b467230ecdc801710da9"
+  },
+  "name": "Macrosistemas",
+  "impactLevel": "Alto",
+  "years": 8,
+  "category": "Tecnología",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T02:18:15.346Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T02:18:15.346Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7bce050cef1e205f1bfe0"
+  },
+  "name": "Paiz",
+  "impactLevel": "Alto",
+  "years": 5,
+  "category": "Supermercado",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T02:54:24.832Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T02:55:16.185Z"
+  }
+}]

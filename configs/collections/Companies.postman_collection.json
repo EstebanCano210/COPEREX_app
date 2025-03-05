@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "3fc68feb-9257-41a4-92b9-a0642e3ef17c",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42121262"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YmM4OTUwY2VmMWUyMDVmMWJmZGEiLCJpYXQiOjE3NDExNDMyMjgsImV4cCI6MTc0MTE1NzYyOH0.saXeYUhYSHQu25hd-BXAl9CZKYeGhmTNEeCFsWZeq5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"La Torre\",\r\n  \"impactLevel\": \"Medio\",\r\n  \"years\": 6,\r\n  \"category\": \"Supermercado\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/CoperexApp/v1/companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"CoperexApp",
+						"v1",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YmM4OTUwY2VmMWUyMDVmMWJmZGEiLCJpYXQiOjE3NDExNDMyMjgsImV4cCI6MTc0MTE1NzYyOH0.saXeYUhYSHQu25hd-BXAl9CZKYeGhmTNEeCFsWZeq5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Paiz\",\r\n  \"impactLevel\": \"Alto\",\r\n  \"years\": 5,\r\n  \"category\": \"Supermercado\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/CoperexApp/v1/companies/67c7bce050cef1e205f1bfe0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"CoperexApp",
+						"v1",
+						"companies",
+						"67c7bce050cef1e205f1bfe0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIstar Por",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YmM4OTUwY2VmMWUyMDVmMWJmZGEiLCJpYXQiOjE3NDExNDMyMjgsImV4cCI6MTc0MTE1NzYyOH0.saXeYUhYSHQu25hd-BXAl9CZKYeGhmTNEeCFsWZeq5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Intelaf\",\r\n  \"impactLevel\": \"Alto\",\r\n  \"years\": 5,\r\n  \"category\": \"Tecnología\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/CoperexApp/v1/companies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"CoperexApp",
+						"v1",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "years",
+							"value": "8",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "desc",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "asc",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "Electrodomesticos",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
